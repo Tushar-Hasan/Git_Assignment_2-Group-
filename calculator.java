@@ -54,5 +54,8 @@ public class Calculator {
     public static double subtract(double x, double y) {
         return x - y;
     }
+    public static double divide(double x, double y) {
+        return x/y;
+    }
 
 }
