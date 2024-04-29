@@ -37,7 +37,15 @@ public class Calculator {
                 return;
         }
 
-        System.out.println("Result: " + result);
+        String num1Desc = (num1 % 2 == 0) ? "Even" : "Odd";
+        String num2Desc = (num2 % 2 == 0) ? "Even" : "Odd";
+        String resultDesc = (result % 2 == 0) ? "Even" : "Odd";
+        String num1Pos = (num1 > 0) ? "Positive" : "Negative";
+        String num2Pos = (num2 > 0) ? "Positive" : "Negative";
+        String resultPos = (result > 0) ? "Positive" : "Negative";
+
+        System.out.printf("%d + %d = %d\n", num1, num2, result);
+        System.out.printf("(%s; %s;) + (%s; %s;) = (%s; %s;)", num1Desc, num1Pos, num2Desc, num2Pos, resultDesc, resultPos);
     }
 
     
